@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Domestic Violence Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Quick Exit Button -->
+  <button class="quick-exit" onclick="quickExit()">Quick Exit</button>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Domestic Violence Support</h1>
+    <p>Your safety matters. Explore resources and support options here.</p>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#self-assessment">Self-Assessment</a></li>
+      <li><a href="#contact">Contact Support</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Resources Section -->
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><strong>National Hotline:</strong> 1-800-799-SAFE</li>
+        <li><strong>Local Shelter:</strong> 123-456-7890</li>
+        <li><strong>Police Emergency:</strong> 911</li>
+      </ul>
+    </section>
+
+    <!-- Self-Assessment Section -->
+    <section id="self-assessment">
+      <h2>Self-Assessment</h2>
+      <form onsubmit="handleAssessment(event)">
+        <p>Answer the following questions:</p>
+        <label>Do you feel safe at home?</label>
+        <select name="q1" required>
+          <option value="">Select an answer</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        <label>Has anyone threatened you?</label>
+        <select name="q2" required>
+          <option value="">Select an answer</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        <label>Do you feel isolated from support?</label>
+        <select name="q3" required>
+          <option value="">Select an answer</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="assessment-result"></p>
+    </section>
+
+    <!-- Contact Support -->
+    <section id="contact">
+      <h2>Contact Support</h2>
+      <p>Email: support@domesticviolence.org</p>
+      <p>Phone: 1-800-123-4567</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Domestic Violence Support. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
